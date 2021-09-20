@@ -9,8 +9,25 @@ body {
   background-color: $black;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: $red;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $red;
+}
+::-webkit-scrollbar-track {
+  background: $black30;
+  border-radius: 0px;
+  box-shadow: inset 7px 10px 12px $black30;
+}
+
 .container {
   width: 100%;
-  max-width: 1688px;
+  max-width: vw(1688);
   margin: 0 auto;
 }
