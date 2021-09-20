@@ -61,3 +61,18 @@
     @content;
   }
 }
+
+@function vw($px) {
+  @return (($px/1920) * 100) + vw;
+}
+
+@mixin hover {
+  @include min("md") {
+    transition: $mainTransition;
+
+    &:hover {
+      @content;
+      transition: $mainTransition;
+    }
+  }
+}
