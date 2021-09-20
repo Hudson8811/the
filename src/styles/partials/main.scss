@@ -1,14 +1,16 @@
 html {
-	font-size: $fs-main;
-}
-body {
-	font-family: $mainFont;
-	color: $textMainColor;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.container{
-	width: 1330px;
-	padding: 0 15px;
-	margin: 0 auto;
-	max-width: 100%;
+body {
+  font-family: $mainFont;
+  color: $white;
+  background-color: $black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1688px;
+  margin: 0 auto;
 }
