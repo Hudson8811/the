@@ -1,16 +1,21 @@
 /* media */
 $media-list: (
-	'xxs': 375,
-	'xs': 560,
-	'sm': 767,
-	'md': 1079,
-	'lg': 1279,
-	'xl': 1599,
-	'xxl': 1900
+  "xxs": 375,
+  "xs": 560,
+  "sm": 767,
+  "md": 1079,
+  "lg": 1279,
+  "xl": 1599,
+  "xxl": 1900,
 );
 
 /* шрифты */
-$mainFont: 'Roboto', sans-serif;
+$mainFont: "JetBrains Mono", "Roboto", sans-serif;
 
 /* цвета */
-$textMainColor: #52525A;
+$white: #ffffff;
+$white30: #e8e8e8;
+$red: #dd0505;
+$black: #000000;
+$black30: #3e3e3e;
+$black71: #717171;
