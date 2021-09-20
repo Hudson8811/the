@@ -1,0 +1,7 @@
+.link {
+  color: inherit;
+
+  @include hover {
+    color: $red;
+  }
+}

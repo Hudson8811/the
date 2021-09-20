@@ -6,8 +6,10 @@
 /* mixin */
 @import "base/mixin";
 
-/*libs*/
+/* UI */
+@import "base/ui";
 
+/*libs*/
 
 /* main */
 @import "partials/main";
@@ -16,8 +18,4 @@
 @import "partials/header";
 @import "partials/footer";
 
-
 /*blocks*/
-
-
-
