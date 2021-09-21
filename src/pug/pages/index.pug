@@ -64,7 +64,7 @@ block main
               .title.title-h3.form-body__title.form-body__group-title
                 | А сюда я буду слать тебе чеки:
               
-              +input({ label: 'Email', type: 'email', name: 'email', placeholder: 'Введите адрес электронной почты' })
+              +input({ label: 'Email', type: 'email', name: 'email', placeholder: 'Введите адрес электронной почты', error: 'Адрес содержит неверные символы' })
 
             //- Description
             .form-body__group.payment-description  

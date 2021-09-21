@@ -2,6 +2,22 @@
   display: flex;
   flex-direction: column;
 
+  &.error {
+    .input {
+      &__label {
+        color: $red;
+      }
+
+      &__item {
+        border-color: $red;
+      }
+
+      &__error {
+        display: flex;
+      }
+    }
+  }
+
   &__label {
     margin-bottom: 8px;
     color: $black71;
@@ -55,6 +71,37 @@
         font-size: 14px;
         line-height: 16px;
       }
+    }
+  }
+
+  &__error {
+    display: none;
+  }
+}
+
+.error {
+  &-caption {
+    align-items: center;
+    margin-top: 8px;
+
+    @include min(1920) {
+      margin-top: vw(8);
+    }
+
+    &__icon {
+      margin-right: 4px;
+      width: 13px;
+      height: 14px;
+
+      @include min(1920) {
+        margin-right: vw(4);
+        width: vw(13);
+        height: vw(14);
+      }
+    }
+
+    &__text {
+      color: $red;
     }
   }
 }
