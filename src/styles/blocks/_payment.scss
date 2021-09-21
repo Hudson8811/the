@@ -290,6 +290,19 @@
         min-height: 24px;
       }
     }
+
+    &__error {
+      display: none;
+      justify-content: center;
+    }
+
+    &.error {
+      .payment-method {
+        &__error {
+          display: flex;
+        }
+      }
+    }
   }
 
   &-description {
