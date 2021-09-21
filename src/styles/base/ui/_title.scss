@@ -21,6 +21,11 @@
       line-height: vw(118);
     }
 
+    @include max("sm") {
+      font-size: 56px;
+      line-height: 74px;
+    }
+
     &--uppercased {
       text-transform: uppercase;
     }
@@ -34,6 +39,11 @@
       font-size: vw(48);
       line-height: vw(52);
     }
+
+    @include max("sm") {
+      font-size: 32px;
+      line-height: 52px;
+    }
   }
 
   &-h2 {
@@ -44,6 +54,11 @@
       font-size: vw(32);
       line-height: vw(40);
     }
+
+    @include max("sm") {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   &-h3 {
@@ -53,6 +68,33 @@
     @include min(1920) {
       font-size: vw(24);
       line-height: vw(28);
+    }
+
+    @include max("sm") {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+.sup {
+  font-size: 14px;
+  line-height: 18px;
+
+  @include min(1920) {
+    font-size: vw(14);
+    line-height: vw(18);
+  }
+
+  @include max("sm") {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  &--mobile {
+    @include max("sm") {
+      font-size: 8px;
+      line-height: 12px;
     }
   }
 }

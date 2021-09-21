@@ -13,6 +13,17 @@
     @include min(1920) {
       padding: vw(16) vw(32);
     }
+
+    @include max("sm") {
+      padding: 8px 16px;
+    }
+
+    &__title {
+      @include max("sm") {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
   }
 
   &-body {
@@ -20,6 +31,17 @@
 
     @include min(1920) {
       padding: vw(32);
+    }
+
+    @include max("sm") {
+      padding: 16px;
+    }
+
+    &__title {
+      @include max("sm") {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
 
     &__group {

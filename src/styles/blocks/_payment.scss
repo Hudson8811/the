@@ -51,6 +51,12 @@
         border-width: vw(1);
       }
 
+      @include max("sm") {
+        width: 152px;
+        min-height: auto;
+        padding: 29px 12px 13px;
+      }
+
       @include hover {
         border-color: $white;
 
@@ -157,6 +163,10 @@
         @include min(1920) {
           margin-right: vw(32);
         }
+
+        @include max("sm") {
+          margin-right: 7px;
+        }
       }
 
       input {
@@ -181,6 +191,10 @@
           top: vw(21);
           right: vw(16);
         }
+
+        @include max("sm") {
+          right: 9px;
+        }
       }
     }
 
@@ -193,6 +207,11 @@
         width: vw(12);
         height: vw(12);
         border-width: vw(1);
+      }
+
+      @include max("sm") {
+        width: 7px;
+        height: 7px;
       }
 
       &-toggle {
@@ -215,6 +234,11 @@
         height: vw(63);
       }
 
+      @include max("sm") {
+        margin-bottom: 8px;
+        height: 38px;
+      }
+
       path {
         transition: $mainTransition;
       }
@@ -229,6 +253,10 @@
         @include min(1920) {
           width: vw(88);
         }
+
+        @include max("sm") {
+          width: 56px;
+        }
       }
 
       &-youmoney {
@@ -236,6 +264,14 @@
 
         @include min(1920) {
           width: vw(203);
+        }
+
+        @include max("sm") {
+          width: 120px;
+        }
+
+        @include max("xxs") {
+          width: 80px;
         }
       }
     }
@@ -249,21 +285,46 @@
       @include min(1920) {
         min-height: vw(42);
       }
+
+      @include max("sm") {
+        min-height: 24px;
+      }
     }
   }
 
   &-description {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     &__icon {
+      flex-shrink: 0;
+      margin-right: 10px;
       width: 85px;
       height: 85px;
+
+      @include min(1920) {
+        margin-right: vw(10);
+        width: vw(85);
+        height: vw(85);
+      }
+
+      @include max("md") {
+        width: 64px;
+        height: 63px;
+      }
 
       &-item {
         width: 100%;
         height: 100%;
+      }
+    }
+
+    &__text {
+      text-align: center;
+
+      @include max("md") {
+        flex-basis: 55%;
       }
     }
   }

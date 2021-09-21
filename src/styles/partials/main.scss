@@ -3,6 +3,11 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+
+  @include max("sm") {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 body {
@@ -39,6 +44,12 @@ footer {
   width: 100%;
   max-width: vw(1688);
   margin: 0 auto;
+
+  @include max("sm") {
+    margin: 0 16px;
+    max-width: none;
+    width: auto;
+  }
 }
 
 .first-section {
@@ -46,6 +57,10 @@ footer {
 
   @include min(1920) {
     margin-top: vw(81);
+  }
+
+  @include max("sm") {
+    margin-top: 73px;
   }
 }
 

@@ -9,6 +9,10 @@
     @include min(1920) {
       margin-bottom: vw(8);
     }
+
+    @include max("sm") {
+      margin-bottom: 3px;
+    }
   }
 
   &__item {
@@ -22,6 +26,10 @@
     @include min(1920) {
       padding: vw(12);
       border-width: vw(2);
+    }
+
+    @include max("sm") {
+      padding: 8px;
     }
 
     @include hover {
@@ -42,6 +50,11 @@
       font-weight: 400;
       color: $black71;
       transition: $mainTransition;
+
+      @include max("sm") {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
 }
