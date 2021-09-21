@@ -1,0 +1,47 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    margin-bottom: 8px;
+    color: $black71;
+
+    @include min(1920) {
+      margin-bottom: vw(8);
+    }
+  }
+
+  &__item {
+    width: 100%;
+    padding: 12px;
+    font-weight: 300;
+    color: $white;
+    background-color: transparent;
+    border: 2px solid $black71;
+
+    @include min(1920) {
+      padding: vw(12);
+      border-width: vw(2);
+    }
+
+    @include hover {
+      background-color: $black30;
+
+      &::placeholder {
+        color: $white;
+        transition: $mainTransition;
+      }
+    }
+
+    &:focus {
+      color: $black;
+      background-color: $white;
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      color: $black71;
+      transition: $mainTransition;
+    }
+  }
+}

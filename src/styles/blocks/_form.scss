@@ -1,0 +1,41 @@
+.form {
+  border: 1px solid $white;
+
+  @include min(1920) {
+    border-width: vw(1);
+  }
+
+  &-heading {
+    padding: 16px 32px;
+    color: $black;
+    background-color: $white;
+
+    @include min(1920) {
+      padding: vw(16) vw(32);
+    }
+  }
+
+  &-body {
+    padding: 32px;
+
+    @include min(1920) {
+      padding: vw(32);
+    }
+
+    &__group {
+      margin-bottom: 40px;
+
+      @include min(1920) {
+        margin-bottom: vw(40);
+      }
+
+      &-title {
+        margin-bottom: 24px;
+
+        @include min(1920) {
+          margin-bottom: vw(24);
+        }
+      }
+    }
+  }
+}

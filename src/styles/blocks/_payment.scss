@@ -1,0 +1,286 @@
+.payment {
+  padding: 76px 0;
+
+  @include min(1920) {
+    padding: vw(76) 0;
+  }
+
+  &-wrapper {
+    margin: 0 auto;
+    max-width: 737px;
+    width: 100%;
+
+    @include min(1920) {
+      max-width: vw(737);
+    }
+  }
+
+  &-method {
+    &__title {
+      margin-bottom: 40px;
+      text-align: center;
+
+      @include min(1920) {
+        margin-bottom: vw(40);
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 272px;
+      min-height: 189px;
+      height: 100%;
+      padding: 19px 10px;
+      border: 1px solid $black71;
+      user-select: none;
+
+      @include min(1920) {
+        width: vw(272);
+        min-height: vw(189);
+        padding: vw(19) vw(10);
+        border-width: vw(1);
+      }
+
+      @include hover {
+        border-color: $white;
+
+        .payment-method {
+          &__checkbox {
+            &-toggle {
+              transform: translate(-3px, -3px);
+              transition: $mainTransition;
+
+              @include min(1920) {
+                transform: translate(vw(-3), vw(-3));
+              }
+            }
+          }
+
+          &__icon {
+            path {
+              transition: $mainTransition;
+            }
+
+            &-card {
+              path {
+                &:nth-child(1) {
+                  fill: $white;
+                }
+              }
+            }
+
+            &-youmoney {
+              path {
+                fill: $white;
+              }
+            }
+          }
+
+          &__text {
+            color: $white;
+            transition: $mainTransition;
+          }
+        }
+      }
+
+      &.active {
+        border-color: $white;
+        background-color: $white;
+        pointer-events: none;
+
+        .payment-method {
+          &__checkbox {
+            border-color: $red;
+
+            &-toggle {
+              background-color: $red;
+              transform: translate(0, 0);
+            }
+          }
+
+          &__icon {
+            &-card {
+              path {
+                &:nth-child(1) {
+                  fill: $black30;
+                }
+
+                &:nth-child(2) {
+                  fill: $black71;
+                }
+
+                &:nth-child(3) {
+                  fill: #fdee5b;
+                }
+
+                &:nth-child(4) {
+                  fill: #d6cccc;
+                }
+
+                &:nth-child(5) {
+                  fill: #ec4835;
+                }
+              }
+            }
+
+            &-youmoney {
+              path {
+                fill: $black;
+
+                &:nth-last-child(1),
+                &:nth-last-child(2) {
+                  fill: #8b3ffd;
+                }
+              }
+            }
+          }
+
+          &__text {
+            color: $black;
+          }
+        }
+      }
+
+      &:nth-child(odd) {
+        margin-right: 32px;
+
+        @include min(1920) {
+          margin-right: vw(32);
+        }
+      }
+
+      input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      &-checkbox {
+        position: absolute;
+        top: 21px;
+        right: 16px;
+
+        @include min(1920) {
+          top: vw(21);
+          right: vw(16);
+        }
+      }
+    }
+
+    &__checkbox {
+      width: 12px;
+      height: 12px;
+      border: 1px solid $black30;
+
+      @include min(1920) {
+        width: vw(12);
+        height: vw(12);
+        border-width: vw(1);
+      }
+
+      &-toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black30;
+        transition: $mainTransition;
+      }
+    }
+
+    &__icon {
+      margin-bottom: 16px;
+      height: 63px;
+
+      @include min(1920) {
+        margin-bottom: vw(16);
+        height: vw(63);
+      }
+
+      path {
+        transition: $mainTransition;
+      }
+
+      &-item {
+        height: 100%;
+      }
+
+      &-card {
+        width: 88px;
+
+        @include min(1920) {
+          width: vw(88);
+        }
+      }
+
+      &-youmoney {
+        width: 203px;
+
+        @include min(1920) {
+          width: vw(203);
+        }
+      }
+    }
+
+    &__text {
+      min-height: 42px;
+      text-align: center;
+      color: $black71;
+      transition: $mainTransition;
+
+      @include min(1920) {
+        min-height: vw(42);
+      }
+    }
+  }
+
+  &-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icon {
+      width: 85px;
+      height: 85px;
+
+      &-item {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-bottom {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__form {
+    margin-bottom: 32px;
+
+    @include min(1920) {
+      margin-bottom: vw(32);
+    }
+  }
+}

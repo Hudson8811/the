@@ -98,3 +98,9 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
+
+/* Убираем outline у кнопок и инпутов */
+input,
+button {
+  outline: none;
+}

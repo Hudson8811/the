@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+  min-height: 64px;
+  font-weight: 700;
+  border: 2px solid $black71;
+  color: $white;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include min(1920) {
+    min-height: vw(64);
+  }
+
+  @include hover {
+    border-color: $red-dark;
+    background-color: $red-dark;
+  }
+
+  &:active {
+    border-color: $red;
+    background-color: $red;
+  }
+}
