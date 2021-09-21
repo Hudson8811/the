@@ -51,6 +51,22 @@
         margin-bottom: vw(40);
       }
 
+      @include max("sm") {
+        margin-bottom: 32px;
+      }
+
+      &--has-error {
+        margin-bottom: 28px;
+
+        @include min(1920) {
+          margin-bottom: vw(28);
+        }
+
+        @include max("sm") {
+          margin-bottom: 18px;
+        }
+      }
+
       &-title {
         margin-bottom: 24px;
 
