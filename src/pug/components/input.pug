@@ -1,0 +1,7 @@
+mixin input(item)
+  .input
+    label.input__label= item.label
+
+    input(type='text' data-type= item.type name= item.name placeholder= item.placeholder required= isRequired ? true : false).input__item
+
+    +errorCaption('input__error', item.error)
