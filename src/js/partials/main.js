@@ -1,10 +1,10 @@
-//= paymentMethod.js
-//= paymentValidate.js
+//= payment/paymentMethod.js
+//= payment/paymentValidate.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector('form');
+  if (document.querySelector('.payment-form')) {
+    const form = document.querySelector('form');
 
-  if (document.querySelector('.payment-method')) {
     paymentMethod(form);
     paymentValidate(form);
   }

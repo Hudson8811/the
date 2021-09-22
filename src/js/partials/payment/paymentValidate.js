@@ -1,10 +1,9 @@
 function paymentValidate(form) {
-  const email = form.querySelector('input[data-type="email"]');
-  const payment = form.querySelector('.payment-method');
-  const paymentMethods = form.querySelectorAll('.payment-method__item input');
+  const email = form.querySelector('input[data-type="email"]'),
+    payment = form.querySelector('.payment-method'),
+    paymentMethods = form.querySelectorAll('.payment-method__item input');
 
   let error = false;
-
 
   form.addEventListener('submit', e => {
     let noMethod = true;
@@ -15,11 +14,7 @@ function paymentValidate(form) {
       }
     });
 
-    if (noMethod) {
-      error = true;
-    } else {
-      error = false;
-    }
+    error = noMethod;
 
     if (error) {
       e.preventDefault();
