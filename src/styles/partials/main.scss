@@ -4,6 +4,11 @@ html {
   font-size: 16px;
   line-height: 19px;
 
+  @include min(1920) {
+    font-size: vw(16);
+    line-height: vw(19);
+  }
+
   @include max("sm") {
     font-size: 14px;
     line-height: 16px;
@@ -89,6 +94,7 @@ footer {
       right: vw(-28);
       width: vw(732);
       height: vw(732);
+      filter: blur(vw(200));
     }
   }
 
@@ -112,6 +118,7 @@ footer {
       left: vw(-532);
       width: vw(876);
       height: vw(876);
+      filter: blur(vw(200));
     }
   }
 }
