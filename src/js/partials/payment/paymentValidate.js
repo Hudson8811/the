@@ -22,7 +22,7 @@ function paymentValidate(form) {
 
       setTimeout(() => {
         payment.classList.remove('error');
-      }, 5000);
+      }, 7000);
     } else {
       error = checkEmail(email);
 
@@ -32,7 +32,7 @@ function paymentValidate(form) {
 
         setTimeout(() => {
           email.closest('.input').classList.remove('error');
-        }, 5000);
+        }, 7000);
       }
     }
   });
@@ -51,7 +51,7 @@ function paymentValidate(form) {
 
       setTimeout(() => {
         email.closest('.input').classList.remove('error');
-      }, 5000);
+      }, 7000);
     } else {
       email.closest('.input').classList.remove('error');
     }
