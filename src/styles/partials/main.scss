@@ -69,61 +69,61 @@ footer {
   }
 }
 
-.main {
-  position: relative;
-  overflow: hidden;
+// .main {
+//   position: relative;
+//   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -164px;
-    right: -28px;
-    width: 732px;
-    height: 732px;
-    border-radius: 50%;
-    background: radial-gradient(
-      86.95% 86.95% at 102.6% 27.94%,
-      #dd0505 0%,
-      rgba(221, 5, 5, 0.12) 100%
-    );
-    opacity: 0.6;
-    filter: blur(200px);
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: -164px;
+//     right: -28px;
+//     width: 732px;
+//     height: 732px;
+//     border-radius: 50%;
+//     background: radial-gradient(
+//       86.95% 86.95% at 102.6% 27.94%,
+//       #dd0505 0%,
+//       rgba(221, 5, 5, 0.12) 100%
+//     );
+//     opacity: 0.6;
+//     filter: blur(200px);
 
-    @include min(1920) {
-      top: vw(-164);
-      right: vw(-28);
-      width: vw(732);
-      height: vw(732);
-      filter: blur(vw(200));
-    }
+//     @include min(1920) {
+//       top: vw(-164);
+//       right: vw(-28);
+//       width: vw(732);
+//       height: vw(732);
+//       filter: blur(vw(200));
+//     }
 
-    @include max("sm") {
-      top: -400px;
-      right: -300px;
-    }
-  }
+//     @include max("sm") {
+//       top: -400px;
+//       right: -300px;
+//     }
+//   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -244px;
-    left: -532px;
-    width: 876px;
-    height: 876px;
-    background: radial-gradient(
-      86.95% 86.95% at 102.6% 27.94%,
-      #dd0505 0%,
-      rgba(221, 5, 5, 0.12) 100%
-    );
-    opacity: 0.2;
-    filter: blur(200px);
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     bottom: -244px;
+//     left: -532px;
+//     width: 876px;
+//     height: 876px;
+//     background: radial-gradient(
+//       86.95% 86.95% at 102.6% 27.94%,
+//       #dd0505 0%,
+//       rgba(221, 5, 5, 0.12) 100%
+//     );
+//     opacity: 0.2;
+//     filter: blur(200px);
 
-    @include min(1920) {
-      bottom: vw(-244);
-      left: vw(-532);
-      width: vw(876);
-      height: vw(876);
-      filter: blur(vw(200));
-    }
-  }
-}
+//     @include min(1920) {
+//       bottom: vw(-244);
+//       left: vw(-532);
+//       width: vw(876);
+//       height: vw(876);
+//       filter: blur(vw(200));
+//     }
+//   }
+// }
