@@ -96,6 +96,11 @@ footer {
       height: vw(732);
       filter: blur(vw(200));
     }
+
+    @include max("sm") {
+      top: -400px;
+      right: -300px;
+    }
   }
 
   &::after {

@@ -17,7 +17,7 @@ block main
             h2.title.title-h2.form-heading__title
               | Форма оплаты
 
-          //- Form heading
+          //- Form body
           .form-body
             //- Payment method
             .form-body__group--has-error.payment-method
@@ -25,11 +25,12 @@ block main
                 | Выбери способ оплаты для привязки:
 
               .payment-method__wrapper
-                .payment-method__item
+                label.payment-method__item
                   input(type="radio" name="method" value="card")
 
-                  .payment-method__item-checkbox.payment-method__checkbox
-                    .payment-method__checkbox-toggle
+                  span.payment-method__test
+
+                  span.payment-method__item-checkbox.payment-method__checkbox
 
                   .payment-method__icon
                     svg(viewBox="0 0 88 63" fill="none" xmlns="http://www.w3.org/2000/svg").payment-method__icon-item.payment-method__icon-card
@@ -39,7 +40,7 @@ block main
                       path(d="M76.341 51.128H61.6391C60.6241 51.128 59.8013 48.5255 59.8013 45.3155C59.8013 42.1055 60.6241 39.503 61.6391 39.503H76.341C77.356 39.503 78.1788 42.1055 78.1788 45.3155C78.1788 48.5255 77.356 51.128 76.341 51.128Z" fill="#3C3C3C")
                       path(d="M38.5039 51.0674H12.8555C11.8437 51.0674 11.0234 50.1999 11.0234 49.1299C11.0234 48.0598 11.8437 47.1923 12.8555 47.1923H38.5039C39.5157 47.1923 40.336 48.0598 40.336 49.1299C40.336 50.1999 39.5157 51.0674 38.5039 51.0674Z" fill="#3C3C3C")
 
-                  .payment-method__text.sup--mobile
+                  span.payment-method__text.sup--mobile
                     | оплата с помощью банковской&nbsp;карты
 
                 .payment-method__item

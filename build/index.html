@@ -51,11 +51,8 @@
                 <div class="form-body__group--has-error payment-method">
                   <div class="title-h3 form-body__group-title form-body__title payment-method__title">Выбери способ оплаты для привязки:</div>
                   <div class="payment-method__wrapper">
-                    <div class="payment-method__item">
-                      <input type="radio" name="method" value="card">
-                      <div class="payment-method__item-checkbox payment-method__checkbox">
-                        <div class="payment-method__checkbox-toggle"></div>
-                      </div>
+                    <label class="payment-method__item">
+                      <input type="radio" name="method" value="card"><span class="payment-method__test"></span><span class="payment-method__item-checkbox payment-method__checkbox"></span>
                       <div class="payment-method__icon">
                         <svg class="payment-method__icon-item payment-method__icon-card" viewBox="0 0 88 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.19135 0.692322H78.8085C83.8675 0.692322 87.9686 5.02954 87.9686 10.3798V53.0049C87.9686 58.3551 83.8675 62.6923 78.8085 62.6923H9.19135C4.13237 62.6925 0.03125 58.3553 0.03125 53.0049V10.38C0.03125 5.02954 4.13237 0.692322 9.19135 0.692322Z" fill="#717171"></path>
@@ -64,9 +61,8 @@
                           <path d="M76.341 51.128H61.6391C60.6241 51.128 59.8013 48.5255 59.8013 45.3155C59.8013 42.1055 60.6241 39.503 61.6391 39.503H76.341C77.356 39.503 78.1788 42.1055 78.1788 45.3155C78.1788 48.5255 77.356 51.128 76.341 51.128Z" fill="#3C3C3C"></path>
                           <path d="M38.5039 51.0674H12.8555C11.8437 51.0674 11.0234 50.1999 11.0234 49.1299C11.0234 48.0598 11.8437 47.1923 12.8555 47.1923H38.5039C39.5157 47.1923 40.336 48.0598 40.336 49.1299C40.336 50.1999 39.5157 51.0674 38.5039 51.0674Z" fill="#3C3C3C"></path>
                         </svg>
-                      </div>
-                      <div class="payment-method__text sup--mobile">оплата с помощью банковской&nbsp;карты</div>
-                    </div>
+                      </div><span class="payment-method__text sup--mobile">оплата с помощью банковской&nbsp;карты</span>
+                    </label>
                     <div class="payment-method__item">
                       <input type="radio" name="method" value="youmoney">
                       <div class="payment-method__item-checkbox payment-method__checkbox">
