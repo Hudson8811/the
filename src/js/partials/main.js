@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector('form');
 
     // paymentMethod(form);
-    paymentValidate(form);
+    // paymentValidate(form);
   }
 });
